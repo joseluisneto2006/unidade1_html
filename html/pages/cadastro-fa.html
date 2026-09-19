@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="author" content="Jose Luis">
+    <meta name="keywords" content="html, webstandards, fifa, formulário, cadastro, fã, ea sports fc">
+    <meta name="description" content="Formulário de cadastro de fãs do FIFA e do EA SPORTS FC">
+    <title>Cadastro de Fã - FIFA / EA SPORTS FC</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header>
+        <h1>FIFA / EA SPORTS FC</h1>
+    </header>
+
+    <hr>
+
+    <!-- Navegação entre paginas -->
+    <nav>
+        <h2>Navegação entre paginas</h2>
+
+        <ul>
+            <li><a href="../main/index.html">A Origem do FIFA</a></li>
+            <li><a href="../pages/evolucao.html">Evolução do FIFA</a></li>
+            <li><a href="../pages/fifa-para-eafc.html">FIFA → EA SPORTS FC</a></li>
+            <li><a href="../pages/trilha-sonora.html">Trilhas Sonoras</a></li>
+            <li><a href="../pages/modos-de-jogo.html">Modos de Jogo</a></li>
+            <li><a href="../pages/jogadores.html">Jogadores</a></li>
+            <li><a href="../pages/times-e-ligas.html">Times e Ligas</a></li>
+            <li><a href="../pages/evolucao-grafica.html">Evolução Gráfica</a></li>
+            <li><a href="../pages/curiosidades.html">Curiosidades</a></li>
+            <li><a href="../pages/guia-controles.html">Guia de Controles</a></li>
+            <li><a href="../pages/cadastro-fa.html">Formulário</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- Conteúdo principal: cadastro de fãs -->
+    <main>
+
+        <!-- Primeiro tópico -->
+        <section>
+
+            <h2>Cadastro de fãs</h2>
+
+            <h3>Agora é a sua vez de participar</h3>
+
+            <p>
+                Depois de conhecer a história do FIFA e do EA SPORTS FC, chegou a hora de fazer parte da
+                comunidade. Preencha o formulário abaixo com seus dados e suas preferências para se cadastrar
+                como fã da franquia da <abbr title="Electronic Arts">EA</abbr>.
+            </p>
+
+            <p>
+                Os campos marcados com <strong>*</strong> são obrigatórios.
+            </p>
+
+            <aside>
+
+                <h3>Como funcionam os campos obrigatórios?</h3>
+
+                <p>
+                    Nome, e-mail e data de nascimento precisam ser preenchidos. Se algum deles ficar vazio,
+                    o navegador avisa antes de enviar o formulário.
+                </p>
+
+            </aside>
+
+        </section>
+
+        <hr>
+
+        <!-- Segundo tópico: o formulário -->
+        <section>
+
+            <h2>Formulário de cadastro</h2>
+
+            <h3>Seus dados e suas preferências</h3>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Dados pessoais</legend>
+
+                    <label>Nome completo: *
+                        <input type="text" name="nome" placeholder="Digite seu nome completo" required>
+                    </label>
+                    <br><br>
+
+                    <label>E-mail: *
+                        <input type="email" name="email" placeholder="exemplo@email.com" required>
+                    </label>
+                    <br><br>
+
+                    <label>Data de nascimento: *
+                        <input type="date" name="nascimento" required>
+                    </label>
+                    <br><br>
+
+                    <label>Foto de perfil:
+                        <input type="file" name="foto">
+                    </label>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend>Suas preferências no jogo</legend>
+
+                    <label>Edição favorita:
+                        <input list="edicoes" name="edicao" placeholder="Digite ou escolha uma edição">
+                    </label>
+
+                    <datalist id="edicoes">
+                        <option value="FIFA International Soccer">
+                        <option value="FIFA 95">
+                        <option value="FIFA 96">
+                        <option value="FIFA 97">
+                        <option value="FIFA 98">
+                        <option value="FIFA 99">
+                        <option value="FIFA 2000">
+                        <option value="FIFA 2001">
+                        <option value="FIFA Football 2002">
+                        <option value="FIFA Football 2003">
+                        <option value="FIFA Football 2004">
+                        <option value="FIFA Football 2005">
+                        <option value="FIFA 06">
+                        <option value="FIFA 07">
+                        <option value="FIFA 08">
+                        <option value="FIFA 09">
+                        <option value="FIFA 10">
+                        <option value="FIFA 11">
+                        <option value="FIFA 12">
+                        <option value="FIFA 13">
+                        <option value="FIFA 14">
+                        <option value="FIFA 15">
+                        <option value="FIFA 16">
+                        <option value="FIFA 17">
+                        <option value="FIFA 18">
+                        <option value="FIFA 19">
+                        <option value="FIFA 20">
+                        <option value="FIFA 21">
+                        <option value="FIFA 22">
+                        <option value="FIFA 23">
+                        <option value="EA SPORTS FC 24">
+                        <option value="EA SPORTS FC 25">
+                        <option value="EA SPORTS FC 26">
+                        <option value="EA SPORTS FC 27">
+                    </datalist>
+                    <br><br>
+
+                    <label>Plataforma principal:
+                        <select name="plataforma">
+                            <option value="">Selecione uma plataforma</option>
+                            <option value="playstation">PlayStation</option>
+                            <option value="xbox">Xbox</option>
+                            <option value="switch">Nintendo Switch</option>
+                            <option value="pc">PC</option>
+                        </select>
+                    </label>
+                    <br><br>
+
+                    <p>Modo de jogo favorito:</p>
+
+                    <label>
+                        <input type="radio" name="modo" value="carreira" checked> Modo Carreira
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="modo" value="ultimate-team"> Ultimate Team
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="modo" value="pro-clubs"> Pro Clubs
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="modo" value="volta"> VOLTA Football
+                    </label>
+                    <br><br>
+
+                    <p>Como você costuma jogar:</p>
+
+                    <label>
+                        <input type="checkbox" name="estilo1" value="sozinho"> Sozinho
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="estilo2" value="amigos"> Com amigos
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="estilo3" value="online"> Online
+                    </label>
+                    <br><br>
+
+                    <label>Cor do seu time do coração:
+                        <input type="color" name="cor">
+                    </label>
+                    <br><br>
+
+                    <label>Nota que você dá para a franquia (0 a 100):
+                        <input type="range" name="nota" min="0" max="100">
+                    </label>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend>Sua história com o FIFA</legend>
+
+                    <label>Conte a sua melhor lembrança:
+                        <br>
+                        <textarea name="lembranca" cols="50" rows="6"
+                            placeholder="Escreva aqui a sua melhor lembrança jogando FIFA ou EA SPORTS FC"></textarea>
+                    </label>
+
+                </fieldset>
+
+                <br>
+
+                <input type="submit" value="Enviar cadastro">
+                <input type="reset" value="Limpar formulário">
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <!-- Terceiro tópico: dúvidas -->
+        <section>
+
+            <h2>Dúvidas sobre o cadastro</h2>
+
+            <h3>Antes de enviar</h3>
+
+            <details>
+
+                <summary>Para onde vão os dados do formulário?</summary>
+
+                <p>
+                    Este formulário faz parte de um projeto de estudo em HTML. Como o site não tem servidor,
+                    os dados não são enviados nem guardados em lugar nenhum.
+                </p>
+
+            </details>
+
+            <details>
+
+                <summary>Como funciona o campo de edição favorita?</summary>
+
+                <p>
+                    Ao digitar ou clicar no campo, o navegador mostra uma lista de sugestões com edições da
+                    franquia. Você também pode escrever uma edição que não está na lista.
+                </p>
+
+            </details>
+
+        </section>
+
+        <hr>
+
+        <!-- Quarto tópico: conclusão / gancho -->
+        <section>
+
+            <article>
+
+                <h2>Obrigado por fazer parte</h2>
+
+                <p>
+                    O formulário encerra o projeto sobre a história do FIFA e do EA SPORTS FC,
+                    desde a origem da franquia até a chegada da nova marca.
+                </p>
+
+                <p>
+                    Obrigado por acompanhar o projeto e fazer parte dessa história.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- Ir direto para pagina anterior -->
+        <h4>
+            <mark>
+                <a href="../pages/guia-controles.html">
+                    Página anterior: Guia de Controles
+                </a>
+            </mark>
+        </h4>
+
+
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <p>
+            <small>
+                A história do FIFA e EA SPORTS FC - Projeto de José Luis
+            </small>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
